@@ -1,0 +1,3528 @@
+{
+  "config": {
+    "topology": "nsfnet",
+    "env_type": "buffered",
+    "classical_traffic_fraction": 0.3,
+    "seed": 1000,
+    "note": "Real, fully-reproducible widest-path heuristic episode. Matches episode 0 of trainer.py's actual evaluate_heuristic_policy eval loop (seed=1000). 294 real relay hop-edges compressed into 22 logical endpoint-to-endpoint edges for visualization; all stats on those edges are real aggregates of the underlying per-hop graph, not invented."
+  },
+  "endpoints": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "logical_edges": [
+    {
+      "u": 0,
+      "v": 1,
+      "distance_km": 1100.0,
+      "n_hops": 14,
+      "classical_hop_fraction": 0.214,
+      "bottleneck_skr_bps": 2550.3,
+      "feasible": true
+    },
+    {
+      "u": 0,
+      "v": 2,
+      "distance_km": 1600.0,
+      "n_hops": 20,
+      "classical_hop_fraction": 0.25,
+      "bottleneck_skr_bps": 2370.8,
+      "feasible": true
+    },
+    {
+      "u": 0,
+      "v": 7,
+      "distance_km": 2800.0,
+      "n_hops": 35,
+      "classical_hop_fraction": 0.286,
+      "bottleneck_skr_bps": 2370.8,
+      "feasible": true
+    },
+    {
+      "u": 1,
+      "v": 2,
+      "distance_km": 600.0,
+      "n_hops": 8,
+      "classical_hop_fraction": 0.375,
+      "bottleneck_skr_bps": 3052.8,
+      "feasible": true
+    },
+    {
+      "u": 1,
+      "v": 3,
+      "distance_km": 1000.0,
+      "n_hops": 12,
+      "classical_hop_fraction": 0.167,
+      "bottleneck_skr_bps": 1994.3,
+      "feasible": true
+    },
+    {
+      "u": 2,
+      "v": 5,
+      "distance_km": 2000.0,
+      "n_hops": 25,
+      "classical_hop_fraction": 0.36,
+      "bottleneck_skr_bps": 2370.8,
+      "feasible": true
+    },
+    {
+      "u": 3,
+      "v": 4,
+      "distance_km": 600.0,
+      "n_hops": 8,
+      "classical_hop_fraction": 0.375,
+      "bottleneck_skr_bps": 3052.8,
+      "feasible": true
+    },
+    {
+      "u": 3,
+      "v": 10,
+      "distance_km": 2400.0,
+      "n_hops": 30,
+      "classical_hop_fraction": 0.4,
+      "bottleneck_skr_bps": 2370.8,
+      "feasible": true
+    },
+    {
+      "u": 4,
+      "v": 5,
+      "distance_km": 1100.0,
+      "n_hops": 14,
+      "classical_hop_fraction": 0.286,
+      "bottleneck_skr_bps": 2550.3,
+      "feasible": true
+    },
+    {
+      "u": 4,
+      "v": 6,
+      "distance_km": 800.0,
+      "n_hops": 10,
+      "classical_hop_fraction": 0.1,
+      "bottleneck_skr_bps": 2370.8,
+      "feasible": true
+    },
+    {
+      "u": 5,
+      "v": 9,
+      "distance_km": 1200.0,
+      "n_hops": 15,
+      "classical_hop_fraction": 0.333,
+      "bottleneck_skr_bps": 2370.8,
+      "feasible": true
+    },
+    {
+      "u": 5,
+      "v": 13,
+      "distance_km": 2000.0,
+      "n_hops": 25,
+      "classical_hop_fraction": 0.16,
+      "bottleneck_skr_bps": 2370.8,
+      "feasible": true
+    },
+    {
+      "u": 6,
+      "v": 7,
+      "distance_km": 700.0,
+      "n_hops": 9,
+      "classical_hop_fraction": 0.222,
+      "bottleneck_skr_bps": 2655.1,
+      "feasible": true
+    },
+    {
+      "u": 7,
+      "v": 8,
+      "distance_km": 700.0,
+      "n_hops": 9,
+      "classical_hop_fraction": 0.222,
+      "bottleneck_skr_bps": 2655.1,
+      "feasible": true
+    },
+    {
+      "u": 8,
+      "v": 9,
+      "distance_km": 500.0,
+      "n_hops": 6,
+      "classical_hop_fraction": 0.5,
+      "bottleneck_skr_bps": 1994.3,
+      "feasible": true
+    },
+    {
+      "u": 8,
+      "v": 11,
+      "distance_km": 500.0,
+      "n_hops": 6,
+      "classical_hop_fraction": 0.0,
+      "bottleneck_skr_bps": 2232.0,
+      "feasible": true
+    },
+    {
+      "u": 8,
+      "v": 13,
+      "distance_km": 500.0,
+      "n_hops": 6,
+      "classical_hop_fraction": 0.333,
+      "bottleneck_skr_bps": 1994.3,
+      "feasible": true
+    },
+    {
+      "u": 9,
+      "v": 11,
+      "distance_km": 800.0,
+      "n_hops": 10,
+      "classical_hop_fraction": 0.4,
+      "bottleneck_skr_bps": 2370.8,
+      "feasible": true
+    },
+    {
+      "u": 9,
+      "v": 12,
+      "distance_km": 300.0,
+      "n_hops": 4,
+      "classical_hop_fraction": 0.5,
+      "bottleneck_skr_bps": 3052.8,
+      "feasible": true
+    },
+    {
+      "u": 10,
+      "v": 11,
+      "distance_km": 800.0,
+      "n_hops": 10,
+      "classical_hop_fraction": 0.3,
+      "bottleneck_skr_bps": 2370.8,
+      "feasible": true
+    },
+    {
+      "u": 10,
+      "v": 13,
+      "distance_km": 800.0,
+      "n_hops": 10,
+      "classical_hop_fraction": 0.4,
+      "bottleneck_skr_bps": 2370.8,
+      "feasible": true
+    },
+    {
+      "u": 11,
+      "v": 12,
+      "distance_km": 300.0,
+      "n_hops": 4,
+      "classical_hop_fraction": 0.25,
+      "bottleneck_skr_bps": 3052.8,
+      "feasible": true
+    },
+    {
+      "u": 12,
+      "v": 13,
+      "distance_km": 300.0,
+      "n_hops": 4,
+      "classical_hop_fraction": 1.0,
+      "bottleneck_skr_bps": 3052.8,
+      "feasible": true
+    }
+  ],
+  "steps": [
+    {
+      "step_idx": 0,
+      "demand": {
+        "src": 4,
+        "dst": 11,
+        "required_bits": 6057.7
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            4,
+            6,
+            7,
+            8,
+            11
+          ],
+          "hops": 34,
+          "bottleneck_bits": 0.0,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            4,
+            5,
+            9,
+            12,
+            11
+          ],
+          "hops": 37,
+          "bottleneck_bits": 0.0,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            4,
+            5,
+            9,
+            11
+          ],
+          "hops": 39,
+          "bottleneck_bits": 0.0,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            4,
+            6,
+            7,
+            8,
+            9,
+            12,
+            11
+          ],
+          "hops": 42,
+          "bottleneck_bits": 0.0,
+          "feasible": true
+        }
+      ],
+      "chosen_action": 4,
+      "chosen_logical_path": null,
+      "outcome": "blocked",
+      "served_total": 0,
+      "blocked_total": 1
+    },
+    {
+      "step_idx": 1,
+      "demand": {
+        "src": 1,
+        "dst": 10,
+        "required_bits": 8423.1
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            1,
+            3,
+            10
+          ],
+          "hops": 42,
+          "bottleneck_bits": 1994.3,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            1,
+            3,
+            4,
+            6,
+            7,
+            8,
+            11,
+            10
+          ],
+          "hops": 64,
+          "bottleneck_bits": 1994.3,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            1,
+            3,
+            4,
+            6,
+            7,
+            8,
+            13,
+            10
+          ],
+          "hops": 64,
+          "bottleneck_bits": 1994.3,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            1,
+            2,
+            5,
+            9,
+            12,
+            11,
+            10
+          ],
+          "hops": 66,
+          "bottleneck_bits": 2370.8,
+          "feasible": true
+        }
+      ],
+      "chosen_action": 4,
+      "chosen_logical_path": null,
+      "outcome": "blocked",
+      "served_total": 0,
+      "blocked_total": 2
+    },
+    {
+      "step_idx": 2,
+      "demand": {
+        "src": 6,
+        "dst": 10,
+        "required_bits": 6675.6
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            6,
+            7,
+            8,
+            11,
+            10
+          ],
+          "hops": 34,
+          "bottleneck_bits": 4464.0,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            6,
+            7,
+            8,
+            13,
+            10
+          ],
+          "hops": 34,
+          "bottleneck_bits": 3988.6,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            6,
+            7,
+            8,
+            11,
+            12,
+            13,
+            10
+          ],
+          "hops": 42,
+          "bottleneck_bits": 4464.0,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            6,
+            7,
+            8,
+            9,
+            12,
+            11,
+            10
+          ],
+          "hops": 42,
+          "bottleneck_bits": 3988.6,
+          "feasible": true
+        }
+      ],
+      "chosen_action": 4,
+      "chosen_logical_path": null,
+      "outcome": "blocked",
+      "served_total": 0,
+      "blocked_total": 3
+    },
+    {
+      "step_idx": 3,
+      "demand": {
+        "src": 2,
+        "dst": 10,
+        "required_bits": 13404.4
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            2,
+            1,
+            3,
+            10
+          ],
+          "hops": 50,
+          "bottleneck_bits": 5982.9,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            2,
+            5,
+            9,
+            12,
+            11,
+            10
+          ],
+          "hops": 58,
+          "bottleneck_bits": 7112.4,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            2,
+            5,
+            9,
+            12,
+            13,
+            10
+          ],
+          "hops": 58,
+          "bottleneck_bits": 7112.4,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            2,
+            5,
+            13,
+            10
+          ],
+          "hops": 60,
+          "bottleneck_bits": 7112.4,
+          "feasible": true
+        }
+      ],
+      "chosen_action": 4,
+      "chosen_logical_path": null,
+      "outcome": "blocked",
+      "served_total": 0,
+      "blocked_total": 4
+    },
+    {
+      "step_idx": 4,
+      "demand": {
+        "src": 3,
+        "dst": 13,
+        "required_bits": 7526.0
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            3,
+            10,
+            13
+          ],
+          "hops": 40,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            3,
+            4,
+            6,
+            7,
+            8,
+            13
+          ],
+          "hops": 42,
+          "bottleneck_bits": 7977.2,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            3,
+            4,
+            5,
+            9,
+            12,
+            13
+          ],
+          "hops": 45,
+          "bottleneck_bits": 9483.2,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            3,
+            4,
+            5,
+            13
+          ],
+          "hops": 47,
+          "bottleneck_bits": 9483.2,
+          "feasible": true
+        }
+      ],
+      "chosen_action": 2,
+      "chosen_logical_path": [
+        3,
+        4,
+        5,
+        9,
+        12,
+        13
+      ],
+      "outcome": "served",
+      "served_total": 1,
+      "blocked_total": 4
+    },
+    {
+      "step_idx": 5,
+      "demand": {
+        "src": 6,
+        "dst": 0,
+        "required_bits": 6098.9
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            6,
+            4,
+            3,
+            1,
+            0
+          ],
+          "hops": 44,
+          "bottleneck_bits": 7737.9,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            6,
+            7,
+            0
+          ],
+          "hops": 44,
+          "bottleneck_bits": 11853.9,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            6,
+            4,
+            3,
+            1,
+            2,
+            0
+          ],
+          "hops": 58,
+          "bottleneck_bits": 7737.9,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            6,
+            4,
+            5,
+            2,
+            0
+          ],
+          "hops": 69,
+          "bottleneck_bits": 5225.3,
+          "feasible": true
+        }
+      ],
+      "chosen_action": 1,
+      "chosen_logical_path": [
+        6,
+        7,
+        0
+      ],
+      "outcome": "served",
+      "served_total": 2,
+      "blocked_total": 4
+    },
+    {
+      "step_idx": 6,
+      "demand": {
+        "src": 4,
+        "dst": 3,
+        "required_bits": 4458.6
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            4,
+            3
+          ],
+          "hops": 8,
+          "bottleneck_bits": 10790.6,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            4,
+            5,
+            2,
+            1,
+            3
+          ],
+          "hops": 59,
+          "bottleneck_bits": 7775.6,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            4,
+            6,
+            7,
+            8,
+            11,
+            10,
+            3
+          ],
+          "hops": 74,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            4,
+            6,
+            7,
+            8,
+            13,
+            10,
+            3
+          ],
+          "hops": 74,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        }
+      ],
+      "chosen_action": 0,
+      "chosen_logical_path": [
+        4,
+        3
+      ],
+      "outcome": "served",
+      "served_total": 3,
+      "blocked_total": 4
+    },
+    {
+      "step_idx": 7,
+      "demand": {
+        "src": 1,
+        "dst": 8,
+        "required_bits": 3813.3
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            1,
+            3,
+            4,
+            6,
+            7,
+            8
+          ],
+          "hops": 48,
+          "bottleneck_bits": 9384.8,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            1,
+            2,
+            5,
+            9,
+            8
+          ],
+          "hops": 54,
+          "bottleneck_bits": 9069.5,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            1,
+            3,
+            4,
+            5,
+            9,
+            8
+          ],
+          "hops": 55,
+          "bottleneck_bits": 9069.5,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            1,
+            0,
+            7,
+            8
+          ],
+          "hops": 58,
+          "bottleneck_bits": 10496.6,
+          "feasible": true
+        }
+      ],
+      "chosen_action": 3,
+      "chosen_logical_path": [
+        1,
+        0,
+        7,
+        8
+      ],
+      "outcome": "served",
+      "served_total": 4,
+      "blocked_total": 4
+    },
+    {
+      "step_idx": 8,
+      "demand": {
+        "src": 8,
+        "dst": 0,
+        "required_bits": 14895.5
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            8,
+            7,
+            0
+          ],
+          "hops": 44,
+          "bottleneck_bits": 9054.1,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            8,
+            7,
+            6,
+            4,
+            3,
+            1,
+            0
+          ],
+          "hops": 62,
+          "bottleneck_bits": 12437.6,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            8,
+            9,
+            5,
+            2,
+            0
+          ],
+          "hops": 66,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            8,
+            9,
+            5,
+            2,
+            1,
+            0
+          ],
+          "hops": 68,
+          "bottleneck_bits": 11440.3,
+          "feasible": true
+        }
+      ],
+      "chosen_action": 4,
+      "chosen_logical_path": null,
+      "outcome": "blocked",
+      "served_total": 4,
+      "blocked_total": 5
+    },
+    {
+      "step_idx": 9,
+      "demand": {
+        "src": 7,
+        "dst": 2,
+        "required_bits": 13086.1
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            7,
+            6,
+            4,
+            3,
+            1,
+            2
+          ],
+          "hops": 47,
+          "bottleneck_bits": 15490.4,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            7,
+            0,
+            2
+          ],
+          "hops": 55,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            7,
+            8,
+            9,
+            5,
+            2
+          ],
+          "hops": 55,
+          "bottleneck_bits": 13811.1,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            7,
+            0,
+            1,
+            2
+          ],
+          "hops": 57,
+          "bottleneck_bits": 11424.9,
+          "feasible": true
+        }
+      ],
+      "chosen_action": 0,
+      "chosen_logical_path": [
+        7,
+        6,
+        4,
+        3,
+        1,
+        2
+      ],
+      "outcome": "served",
+      "served_total": 5,
+      "blocked_total": 5
+    },
+    {
+      "step_idx": 10,
+      "demand": {
+        "src": 10,
+        "dst": 1,
+        "required_bits": 7266.1
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            10,
+            3,
+            1
+          ],
+          "hops": 42,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            10,
+            11,
+            8,
+            7,
+            6,
+            4,
+            3,
+            1
+          ],
+          "hops": 64,
+          "bottleneck_bits": 5457.0,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            10,
+            13,
+            8,
+            7,
+            6,
+            4,
+            3,
+            1
+          ],
+          "hops": 64,
+          "bottleneck_bits": 5457.0,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            10,
+            11,
+            12,
+            9,
+            5,
+            2,
+            1
+          ],
+          "hops": 66,
+          "bottleneck_bits": 16181.9,
+          "feasible": true
+        }
+      ],
+      "chosen_action": 3,
+      "chosen_logical_path": [
+        10,
+        11,
+        12,
+        9,
+        5,
+        2,
+        1
+      ],
+      "outcome": "served",
+      "served_total": 6,
+      "blocked_total": 5
+    },
+    {
+      "step_idx": 11,
+      "demand": {
+        "src": 3,
+        "dst": 10,
+        "required_bits": 4252.1
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            3,
+            10
+          ],
+          "hops": 30,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            3,
+            4,
+            6,
+            7,
+            8,
+            11,
+            10
+          ],
+          "hops": 52,
+          "bottleneck_bits": 8509.8,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            3,
+            4,
+            6,
+            7,
+            8,
+            13,
+            10
+          ],
+          "hops": 52,
+          "bottleneck_bits": 8509.8,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            3,
+            4,
+            5,
+            9,
+            12,
+            11,
+            10
+          ],
+          "hops": 55,
+          "bottleneck_bits": 8509.8,
+          "feasible": true
+        }
+      ],
+      "chosen_action": 1,
+      "chosen_logical_path": [
+        3,
+        4,
+        6,
+        7,
+        8,
+        11,
+        10
+      ],
+      "outcome": "served",
+      "served_total": 7,
+      "blocked_total": 5
+    },
+    {
+      "step_idx": 12,
+      "demand": {
+        "src": 4,
+        "dst": 1,
+        "required_bits": 2136.8
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            4,
+            3,
+            1
+          ],
+          "hops": 20,
+          "bottleneck_bits": 7310.4,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            4,
+            5,
+            2,
+            1
+          ],
+          "hops": 47,
+          "bottleneck_bits": 16281.0,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            4,
+            6,
+            7,
+            0,
+            1
+          ],
+          "hops": 68,
+          "bottleneck_bits": 8423.7,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            4,
+            5,
+            2,
+            0,
+            1
+          ],
+          "hops": 73,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        }
+      ],
+      "chosen_action": 1,
+      "chosen_logical_path": [
+        4,
+        5,
+        2,
+        1
+      ],
+      "outcome": "served",
+      "served_total": 8,
+      "blocked_total": 5
+    },
+    {
+      "step_idx": 13,
+      "demand": {
+        "src": 5,
+        "dst": 7,
+        "required_bits": 11602.0
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            5,
+            9,
+            8,
+            7
+          ],
+          "hops": 30,
+          "bottleneck_bits": 16028.2,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            5,
+            4,
+            6,
+            7
+          ],
+          "hops": 33,
+          "bottleneck_bits": 11078.7,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            5,
+            9,
+            12,
+            11,
+            8,
+            7
+          ],
+          "hops": 38,
+          "bottleneck_bits": 16028.2,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            5,
+            9,
+            12,
+            13,
+            8,
+            7
+          ],
+          "hops": 38,
+          "bottleneck_bits": 16028.2,
+          "feasible": true
+        }
+      ],
+      "chosen_action": 0,
+      "chosen_logical_path": [
+        5,
+        9,
+        8,
+        7
+      ],
+      "outcome": "served",
+      "served_total": 9,
+      "blocked_total": 5
+    },
+    {
+      "step_idx": 14,
+      "demand": {
+        "src": 5,
+        "dst": 7,
+        "required_bits": 2721.4
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            5,
+            9,
+            8,
+            7
+          ],
+          "hops": 30,
+          "bottleneck_bits": 6796.9,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            5,
+            4,
+            6,
+            7
+          ],
+          "hops": 33,
+          "bottleneck_bits": 13733.8,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            5,
+            9,
+            12,
+            11,
+            8,
+            7
+          ],
+          "hops": 38,
+          "bottleneck_bits": 6796.9,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            5,
+            9,
+            12,
+            13,
+            8,
+            7
+          ],
+          "hops": 38,
+          "bottleneck_bits": 6796.9,
+          "feasible": true
+        }
+      ],
+      "chosen_action": 1,
+      "chosen_logical_path": [
+        5,
+        4,
+        6,
+        7
+      ],
+      "outcome": "served",
+      "served_total": 10,
+      "blocked_total": 5
+    },
+    {
+      "step_idx": 15,
+      "demand": {
+        "src": 13,
+        "dst": 2,
+        "required_bits": 10678.0
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            13,
+            12,
+            9,
+            5,
+            2
+          ],
+          "hops": 48,
+          "bottleneck_bits": 9167.7,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            13,
+            5,
+            2
+          ],
+          "hops": 50,
+          "bottleneck_bits": 26158.9,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            13,
+            8,
+            9,
+            5,
+            2
+          ],
+          "hops": 52,
+          "bottleneck_bits": 9167.7,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            13,
+            12,
+            11,
+            9,
+            5,
+            2
+          ],
+          "hops": 58,
+          "bottleneck_bits": 9167.7,
+          "feasible": true
+        }
+      ],
+      "chosen_action": 1,
+      "chosen_logical_path": [
+        13,
+        5,
+        2
+      ],
+      "outcome": "served",
+      "served_total": 11,
+      "blocked_total": 5
+    },
+    {
+      "step_idx": 16,
+      "demand": {
+        "src": 6,
+        "dst": 3,
+        "required_bits": 4423.4
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            6,
+            4,
+            3
+          ],
+          "hops": 18,
+          "bottleneck_bits": 17872.9,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            6,
+            7,
+            8,
+            9,
+            5,
+            4,
+            3
+          ],
+          "hops": 61,
+          "bottleneck_bits": 11538.5,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            6,
+            7,
+            8,
+            11,
+            10,
+            3
+          ],
+          "hops": 64,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            6,
+            7,
+            8,
+            13,
+            10,
+            3
+          ],
+          "hops": 64,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        }
+      ],
+      "chosen_action": 0,
+      "chosen_logical_path": [
+        6,
+        4,
+        3
+      ],
+      "outcome": "served",
+      "served_total": 12,
+      "blocked_total": 5
+    },
+    {
+      "step_idx": 17,
+      "demand": {
+        "src": 8,
+        "dst": 11,
+        "required_bits": 13592.5
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            8,
+            11
+          ],
+          "hops": 6,
+          "bottleneck_bits": 33692.2,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            8,
+            9,
+            12,
+            11
+          ],
+          "hops": 14,
+          "bottleneck_bits": 22300.9,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            8,
+            13,
+            12,
+            11
+          ],
+          "hops": 14,
+          "bottleneck_bits": 33902.9,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            8,
+            9,
+            11
+          ],
+          "hops": 16,
+          "bottleneck_bits": 22300.9,
+          "feasible": true
+        }
+      ],
+      "chosen_action": 2,
+      "chosen_logical_path": [
+        8,
+        13,
+        12,
+        11
+      ],
+      "outcome": "served",
+      "served_total": 13,
+      "blocked_total": 5
+    },
+    {
+      "step_idx": 18,
+      "demand": {
+        "src": 2,
+        "dst": 1,
+        "required_bits": 11328.5
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            2,
+            1
+          ],
+          "hops": 8,
+          "bottleneck_bits": 32460.8,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            2,
+            0,
+            1
+          ],
+          "hops": 34,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            2,
+            5,
+            4,
+            3,
+            1
+          ],
+          "hops": 59,
+          "bottleneck_bits": 21203.7,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            2,
+            0,
+            7,
+            6,
+            4,
+            3,
+            1
+          ],
+          "hops": 94,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        }
+      ],
+      "chosen_action": 0,
+      "chosen_logical_path": [
+        2,
+        1
+      ],
+      "outcome": "served",
+      "served_total": 14,
+      "blocked_total": 5
+    },
+    {
+      "step_idx": 19,
+      "demand": {
+        "src": 10,
+        "dst": 5,
+        "required_bits": 14252.6
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            10,
+            11,
+            12,
+            9,
+            5
+          ],
+          "hops": 33,
+          "bottleneck_bits": 18650.9,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            10,
+            13,
+            12,
+            9,
+            5
+          ],
+          "hops": 33,
+          "bottleneck_bits": 18650.9,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            10,
+            11,
+            9,
+            5
+          ],
+          "hops": 35,
+          "bottleneck_bits": 18650.9,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            10,
+            13,
+            5
+          ],
+          "hops": 35,
+          "bottleneck_bits": 34367.0,
+          "feasible": true
+        }
+      ],
+      "chosen_action": 3,
+      "chosen_logical_path": [
+        10,
+        13,
+        5
+      ],
+      "outcome": "served",
+      "served_total": 15,
+      "blocked_total": 5
+    },
+    {
+      "step_idx": 20,
+      "demand": {
+        "src": 10,
+        "dst": 12,
+        "required_bits": 3235.6
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            10,
+            11,
+            12
+          ],
+          "hops": 14,
+          "bottleneck_bits": 35897.6,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            10,
+            13,
+            12
+          ],
+          "hops": 14,
+          "bottleneck_bits": 33163.2,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            10,
+            11,
+            9,
+            12
+          ],
+          "hops": 24,
+          "bottleneck_bits": 35897.6,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            10,
+            13,
+            8,
+            9,
+            12
+          ],
+          "hops": 26,
+          "bottleneck_bits": 26293.3,
+          "feasible": true
+        }
+      ],
+      "chosen_action": 0,
+      "chosen_logical_path": [
+        10,
+        11,
+        12
+      ],
+      "outcome": "served",
+      "served_total": 16,
+      "blocked_total": 5
+    },
+    {
+      "step_idx": 21,
+      "demand": {
+        "src": 11,
+        "dst": 5,
+        "required_bits": 6361.1
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            11,
+            12,
+            9,
+            5
+          ],
+          "hops": 23,
+          "bottleneck_bits": 23392.5,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            11,
+            9,
+            5
+          ],
+          "hops": 25,
+          "bottleneck_bits": 23392.5,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            11,
+            8,
+            9,
+            5
+          ],
+          "hops": 27,
+          "bottleneck_bits": 23392.5,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            11,
+            12,
+            13,
+            5
+          ],
+          "hops": 33,
+          "bottleneck_bits": 24856.0,
+          "feasible": true
+        }
+      ],
+      "chosen_action": 3,
+      "chosen_logical_path": [
+        11,
+        12,
+        13,
+        5
+      ],
+      "outcome": "served",
+      "served_total": 17,
+      "blocked_total": 5
+    },
+    {
+      "step_idx": 22,
+      "demand": {
+        "src": 0,
+        "dst": 12,
+        "required_bits": 12084.9
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            0,
+            7,
+            8,
+            9,
+            12
+          ],
+          "hops": 54,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            0,
+            7,
+            8,
+            11,
+            12
+          ],
+          "hops": 54,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            0,
+            7,
+            8,
+            13,
+            12
+          ],
+          "hops": 54,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            0,
+            2,
+            5,
+            9,
+            12
+          ],
+          "hops": 64,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        }
+      ],
+      "chosen_action": 4,
+      "chosen_logical_path": null,
+      "outcome": "blocked",
+      "served_total": 17,
+      "blocked_total": 6
+    },
+    {
+      "step_idx": 23,
+      "demand": {
+        "src": 8,
+        "dst": 6,
+        "required_bits": 14130.7
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            8,
+            7,
+            6
+          ],
+          "hops": 18,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            8,
+            9,
+            5,
+            4,
+            6
+          ],
+          "hops": 45,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            8,
+            11,
+            12,
+            9,
+            5,
+            4,
+            6
+          ],
+          "hops": 53,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            8,
+            13,
+            12,
+            9,
+            5,
+            4,
+            6
+          ],
+          "hops": 53,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        }
+      ],
+      "chosen_action": 4,
+      "chosen_logical_path": null,
+      "outcome": "blocked",
+      "served_total": 17,
+      "blocked_total": 7
+    },
+    {
+      "step_idx": 24,
+      "demand": {
+        "src": 11,
+        "dst": 7,
+        "required_bits": 8006.1
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            11,
+            8,
+            7
+          ],
+          "hops": 15,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            11,
+            12,
+            9,
+            8,
+            7
+          ],
+          "hops": 23,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            11,
+            12,
+            13,
+            8,
+            7
+          ],
+          "hops": 23,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            11,
+            9,
+            8,
+            7
+          ],
+          "hops": 25,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        }
+      ],
+      "chosen_action": 4,
+      "chosen_logical_path": null,
+      "outcome": "blocked",
+      "served_total": 17,
+      "blocked_total": 8
+    },
+    {
+      "step_idx": 25,
+      "demand": {
+        "src": 8,
+        "dst": 9,
+        "required_bits": 6480.0
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            8,
+            9
+          ],
+          "hops": 6,
+          "bottleneck_bits": 38255.2,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            8,
+            11,
+            12,
+            9
+          ],
+          "hops": 14,
+          "bottleneck_bits": 45864.0,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            8,
+            13,
+            12,
+            9
+          ],
+          "hops": 14,
+          "bottleneck_bits": 36264.8,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            8,
+            11,
+            9
+          ],
+          "hops": 16,
+          "bottleneck_bits": 51548.4,
+          "feasible": true
+        }
+      ],
+      "chosen_action": 3,
+      "chosen_logical_path": [
+        8,
+        11,
+        9
+      ],
+      "outcome": "served",
+      "served_total": 18,
+      "blocked_total": 8
+    },
+    {
+      "step_idx": 26,
+      "demand": {
+        "src": 11,
+        "dst": 13,
+        "required_bits": 13766.0
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            11,
+            12,
+            13
+          ],
+          "hops": 8,
+          "bottleneck_bits": 48916.8,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            11,
+            8,
+            13
+          ],
+          "hops": 12,
+          "bottleneck_bits": 38259.1,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            11,
+            9,
+            12,
+            13
+          ],
+          "hops": 18,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            11,
+            12,
+            9,
+            8,
+            13
+          ],
+          "hops": 20,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        }
+      ],
+      "chosen_action": 0,
+      "chosen_logical_path": [
+        11,
+        12,
+        13
+      ],
+      "outcome": "served",
+      "served_total": 19,
+      "blocked_total": 8
+    },
+    {
+      "step_idx": 27,
+      "demand": {
+        "src": 6,
+        "dst": 2,
+        "required_bits": 13778.2
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            6,
+            4,
+            3,
+            1,
+            2
+          ],
+          "hops": 38,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            6,
+            4,
+            5,
+            2
+          ],
+          "hops": 49,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            6,
+            7,
+            8,
+            9,
+            5,
+            2
+          ],
+          "hops": 64,
+          "bottleneck_bits": 32169.7,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            6,
+            4,
+            3,
+            1,
+            0,
+            2
+          ],
+          "hops": 64,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        }
+      ],
+      "chosen_action": 2,
+      "chosen_logical_path": [
+        6,
+        7,
+        8,
+        9,
+        5,
+        2
+      ],
+      "outcome": "served",
+      "served_total": 20,
+      "blocked_total": 8
+    },
+    {
+      "step_idx": 28,
+      "demand": {
+        "src": 9,
+        "dst": 2,
+        "required_bits": 6072.2
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            9,
+            5,
+            2
+          ],
+          "hops": 40,
+          "bottleneck_bits": 26209.8,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            9,
+            5,
+            4,
+            3,
+            1,
+            2
+          ],
+          "hops": 57,
+          "bottleneck_bits": 26209.8,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            9,
+            12,
+            13,
+            5,
+            2
+          ],
+          "hops": 58,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            9,
+            8,
+            7,
+            6,
+            4,
+            3,
+            1,
+            2
+          ],
+          "hops": 62,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        }
+      ],
+      "chosen_action": 0,
+      "chosen_logical_path": [
+        9,
+        5,
+        2
+      ],
+      "outcome": "served",
+      "served_total": 21,
+      "blocked_total": 8
+    },
+    {
+      "step_idx": 29,
+      "demand": {
+        "src": 2,
+        "dst": 0,
+        "required_bits": 9468.2
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            2,
+            0
+          ],
+          "hops": 20,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            2,
+            1,
+            0
+          ],
+          "hops": 22,
+          "bottleneck_bits": 54712.7,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            2,
+            5,
+            4,
+            3,
+            1,
+            0
+          ],
+          "hops": 73,
+          "bottleneck_bits": 28821.6,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            2,
+            1,
+            3,
+            4,
+            6,
+            7,
+            0
+          ],
+          "hops": 82,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        }
+      ],
+      "chosen_action": 1,
+      "chosen_logical_path": [
+        2,
+        1,
+        0
+      ],
+      "outcome": "served",
+      "served_total": 22,
+      "blocked_total": 8
+    },
+    {
+      "step_idx": 30,
+      "demand": {
+        "src": 6,
+        "dst": 5,
+        "required_bits": 4791.2
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            6,
+            4,
+            5
+          ],
+          "hops": 24,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            6,
+            7,
+            8,
+            9,
+            5
+          ],
+          "hops": 39,
+          "bottleneck_bits": 24879.2,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            6,
+            7,
+            8,
+            11,
+            12,
+            9,
+            5
+          ],
+          "hops": 47,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            6,
+            7,
+            8,
+            13,
+            12,
+            9,
+            5
+          ],
+          "hops": 47,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        }
+      ],
+      "chosen_action": 1,
+      "chosen_logical_path": [
+        6,
+        7,
+        8,
+        9,
+        5
+      ],
+      "outcome": "served",
+      "served_total": 23,
+      "blocked_total": 8
+    },
+    {
+      "step_idx": 31,
+      "demand": {
+        "src": 11,
+        "dst": 9,
+        "required_bits": 5248.7
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            11,
+            12,
+            9
+          ],
+          "hops": 8,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            11,
+            9
+          ],
+          "hops": 10,
+          "bottleneck_bits": 67014.5,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            11,
+            8,
+            9
+          ],
+          "hops": 12,
+          "bottleneck_bits": 31651.6,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            11,
+            12,
+            13,
+            8,
+            9
+          ],
+          "hops": 20,
+          "bottleneck_bits": 31651.6,
+          "feasible": true
+        }
+      ],
+      "chosen_action": 1,
+      "chosen_logical_path": [
+        11,
+        9
+      ],
+      "outcome": "served",
+      "served_total": 24,
+      "blocked_total": 8
+    },
+    {
+      "step_idx": 32,
+      "demand": {
+        "src": 10,
+        "dst": 13,
+        "required_bits": 6542.8
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            10,
+            13
+          ],
+          "hops": 10,
+          "bottleneck_bits": 61612.6,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            10,
+            11,
+            12,
+            13
+          ],
+          "hops": 18,
+          "bottleneck_bits": 53467.4,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            10,
+            11,
+            8,
+            13
+          ],
+          "hops": 22,
+          "bottleneck_bits": 50224.8,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            10,
+            11,
+            9,
+            12,
+            13
+          ],
+          "hops": 28,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        }
+      ],
+      "chosen_action": 0,
+      "chosen_logical_path": [
+        10,
+        13
+      ],
+      "outcome": "served",
+      "served_total": 25,
+      "blocked_total": 8
+    },
+    {
+      "step_idx": 33,
+      "demand": {
+        "src": 2,
+        "dst": 7,
+        "required_bits": 8738.1
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            2,
+            1,
+            3,
+            4,
+            6,
+            7
+          ],
+          "hops": 47,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            2,
+            5,
+            9,
+            8,
+            7
+          ],
+          "hops": 55,
+          "bottleneck_bits": 27200.4,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            2,
+            0,
+            7
+          ],
+          "hops": 55,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            2,
+            1,
+            0,
+            7
+          ],
+          "hops": 57,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        }
+      ],
+      "chosen_action": 1,
+      "chosen_logical_path": [
+        2,
+        5,
+        9,
+        8,
+        7
+      ],
+      "outcome": "served",
+      "served_total": 26,
+      "blocked_total": 8
+    },
+    {
+      "step_idx": 34,
+      "demand": {
+        "src": 5,
+        "dst": 2,
+        "required_bits": 4174.8
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            5,
+            2
+          ],
+          "hops": 25,
+          "bottleneck_bits": 31937.4,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            5,
+            4,
+            3,
+            1,
+            2
+          ],
+          "hops": 42,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            5,
+            4,
+            3,
+            1,
+            0,
+            2
+          ],
+          "hops": 68,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            5,
+            9,
+            8,
+            7,
+            6,
+            4,
+            3,
+            1,
+            2
+          ],
+          "hops": 77,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        }
+      ],
+      "chosen_action": 0,
+      "chosen_logical_path": [
+        5,
+        2
+      ],
+      "outcome": "served",
+      "served_total": 27,
+      "blocked_total": 8
+    },
+    {
+      "step_idx": 35,
+      "demand": {
+        "src": 4,
+        "dst": 11,
+        "required_bits": 4337.4
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            4,
+            6,
+            7,
+            8,
+            11
+          ],
+          "hops": 34,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            4,
+            5,
+            9,
+            12,
+            11
+          ],
+          "hops": 37,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            4,
+            5,
+            9,
+            11
+          ],
+          "hops": 39,
+          "bottleneck_bits": 23203.8,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            4,
+            6,
+            7,
+            8,
+            9,
+            12,
+            11
+          ],
+          "hops": 42,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        }
+      ],
+      "chosen_action": 2,
+      "chosen_logical_path": [
+        4,
+        5,
+        9,
+        11
+      ],
+      "outcome": "served",
+      "served_total": 28,
+      "blocked_total": 8
+    },
+    {
+      "step_idx": 36,
+      "demand": {
+        "src": 13,
+        "dst": 11,
+        "required_bits": 11963.0
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            13,
+            12,
+            11
+          ],
+          "hops": 8,
+          "bottleneck_bits": 65678.4,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            13,
+            8,
+            11
+          ],
+          "hops": 12,
+          "bottleneck_bits": 58202.0,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            13,
+            12,
+            9,
+            11
+          ],
+          "hops": 18,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            13,
+            10,
+            11
+          ],
+          "hops": 20,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        }
+      ],
+      "chosen_action": 0,
+      "chosen_logical_path": [
+        13,
+        12,
+        11
+      ],
+      "outcome": "served",
+      "served_total": 29,
+      "blocked_total": 8
+    },
+    {
+      "step_idx": 37,
+      "demand": {
+        "src": 13,
+        "dst": 3,
+        "required_bits": 7624.6
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            13,
+            10,
+            3
+          ],
+          "hops": 40,
+          "bottleneck_bits": 28609.7,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            13,
+            8,
+            7,
+            6,
+            4,
+            3
+          ],
+          "hops": 42,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            13,
+            12,
+            9,
+            5,
+            4,
+            3
+          ],
+          "hops": 45,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            13,
+            5,
+            4,
+            3
+          ],
+          "hops": 47,
+          "bottleneck_bits": 56427.5,
+          "feasible": true
+        }
+      ],
+      "chosen_action": 3,
+      "chosen_logical_path": [
+        13,
+        5,
+        4,
+        3
+      ],
+      "outcome": "served",
+      "served_total": 30,
+      "blocked_total": 8
+    },
+    {
+      "step_idx": 38,
+      "demand": {
+        "src": 8,
+        "dst": 3,
+        "required_bits": 9916.7
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            8,
+            7,
+            6,
+            4,
+            3
+          ],
+          "hops": 36,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            8,
+            9,
+            5,
+            4,
+            3
+          ],
+          "hops": 43,
+          "bottleneck_bits": 25978.8,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            8,
+            11,
+            10,
+            3
+          ],
+          "hops": 46,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            8,
+            13,
+            10,
+            3
+          ],
+          "hops": 46,
+          "bottleneck_bits": 31210.6,
+          "feasible": true
+        }
+      ],
+      "chosen_action": 3,
+      "chosen_logical_path": [
+        8,
+        13,
+        10,
+        3
+      ],
+      "outcome": "served",
+      "served_total": 31,
+      "blocked_total": 8
+    },
+    {
+      "step_idx": 39,
+      "demand": {
+        "src": 13,
+        "dst": 5,
+        "required_bits": 5484.2
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            13,
+            12,
+            9,
+            5
+          ],
+          "hops": 23,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            13,
+            5
+          ],
+          "hops": 25,
+          "bottleneck_bits": 53544.5,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            13,
+            8,
+            9,
+            5
+          ],
+          "hops": 27,
+          "bottleneck_bits": 28349.6,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            13,
+            12,
+            11,
+            9,
+            5
+          ],
+          "hops": 33,
+          "bottleneck_bits": 28349.6,
+          "feasible": true
+        }
+      ],
+      "chosen_action": 1,
+      "chosen_logical_path": [
+        13,
+        5
+      ],
+      "outcome": "served",
+      "served_total": 32,
+      "blocked_total": 8
+    },
+    {
+      "step_idx": 40,
+      "demand": {
+        "src": 9,
+        "dst": 3,
+        "required_bits": 10042.9
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            9,
+            5,
+            4,
+            3
+          ],
+          "hops": 37,
+          "bottleneck_bits": 30720.4,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            9,
+            8,
+            7,
+            6,
+            4,
+            3
+          ],
+          "hops": 42,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            9,
+            12,
+            11,
+            10,
+            3
+          ],
+          "hops": 48,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            9,
+            12,
+            13,
+            10,
+            3
+          ],
+          "hops": 48,
+          "bottleneck_bits": 26495.7,
+          "feasible": true
+        }
+      ],
+      "chosen_action": 0,
+      "chosen_logical_path": [
+        9,
+        5,
+        4,
+        3
+      ],
+      "outcome": "served",
+      "served_total": 33,
+      "blocked_total": 8
+    },
+    {
+      "step_idx": 41,
+      "demand": {
+        "src": 1,
+        "dst": 11,
+        "required_bits": 6699.5
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            1,
+            3,
+            10,
+            11
+          ],
+          "hops": 52,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            1,
+            3,
+            4,
+            6,
+            7,
+            8,
+            11
+          ],
+          "hops": 54,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            1,
+            2,
+            5,
+            9,
+            12,
+            11
+          ],
+          "hops": 56,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            1,
+            3,
+            4,
+            5,
+            9,
+            12,
+            11
+          ],
+          "hops": 57,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        }
+      ],
+      "chosen_action": 4,
+      "chosen_logical_path": null,
+      "outcome": "blocked",
+      "served_total": 33,
+      "blocked_total": 9
+    },
+    {
+      "step_idx": 42,
+      "demand": {
+        "src": 10,
+        "dst": 12,
+        "required_bits": 11595.4
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            10,
+            11,
+            12
+          ],
+          "hops": 14,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            10,
+            13,
+            12
+          ],
+          "hops": 14,
+          "bottleneck_bits": 68861.0,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            10,
+            11,
+            9,
+            12
+          ],
+          "hops": 24,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            10,
+            13,
+            8,
+            9,
+            12
+          ],
+          "hops": 26,
+          "bottleneck_bits": 44850.6,
+          "feasible": true
+        }
+      ],
+      "chosen_action": 1,
+      "chosen_logical_path": [
+        10,
+        13,
+        12
+      ],
+      "outcome": "served",
+      "served_total": 34,
+      "blocked_total": 9
+    },
+    {
+      "step_idx": 43,
+      "demand": {
+        "src": 2,
+        "dst": 11,
+        "required_bits": 11223.6
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            2,
+            5,
+            9,
+            12,
+            11
+          ],
+          "hops": 48,
+          "bottleneck_bits": 27789.8,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            2,
+            5,
+            9,
+            11
+          ],
+          "hops": 50,
+          "bottleneck_bits": 27789.8,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            2,
+            5,
+            9,
+            8,
+            11
+          ],
+          "hops": 52,
+          "bottleneck_bits": 27789.8,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            2,
+            5,
+            13,
+            12,
+            11
+          ],
+          "hops": 58,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        }
+      ],
+      "chosen_action": 0,
+      "chosen_logical_path": [
+        2,
+        5,
+        9,
+        12,
+        11
+      ],
+      "outcome": "served",
+      "served_total": 35,
+      "blocked_total": 9
+    },
+    {
+      "step_idx": 44,
+      "demand": {
+        "src": 5,
+        "dst": 13,
+        "required_bits": 9742.5
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            5,
+            9,
+            12,
+            13
+          ],
+          "hops": 23,
+          "bottleneck_bits": 18937.0,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            5,
+            13
+          ],
+          "hops": 25,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            5,
+            9,
+            8,
+            13
+          ],
+          "hops": 27,
+          "bottleneck_bits": 18937.0,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            5,
+            9,
+            11,
+            12,
+            13
+          ],
+          "hops": 33,
+          "bottleneck_bits": 18937.0,
+          "feasible": true
+        }
+      ],
+      "chosen_action": 0,
+      "chosen_logical_path": [
+        5,
+        9,
+        12,
+        13
+      ],
+      "outcome": "served",
+      "served_total": 36,
+      "blocked_total": 9
+    },
+    {
+      "step_idx": 45,
+      "demand": {
+        "src": 12,
+        "dst": 3,
+        "required_bits": 11893.8
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            12,
+            9,
+            5,
+            4,
+            3
+          ],
+          "hops": 41,
+          "bottleneck_bits": 11565.4,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            12,
+            11,
+            10,
+            3
+          ],
+          "hops": 44,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            12,
+            13,
+            10,
+            3
+          ],
+          "hops": 44,
+          "bottleneck_bits": 39500.1,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            12,
+            9,
+            8,
+            7,
+            6,
+            4,
+            3
+          ],
+          "hops": 46,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        }
+      ],
+      "chosen_action": 2,
+      "chosen_logical_path": [
+        12,
+        13,
+        10,
+        3
+      ],
+      "outcome": "served",
+      "served_total": 37,
+      "blocked_total": 9
+    },
+    {
+      "step_idx": 46,
+      "demand": {
+        "src": 8,
+        "dst": 10,
+        "required_bits": 12745.1
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            8,
+            11,
+            10
+          ],
+          "hops": 16,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            8,
+            13,
+            10
+          ],
+          "hops": 16,
+          "bottleneck_bits": 54855.0,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            8,
+            11,
+            12,
+            13,
+            10
+          ],
+          "hops": 24,
+          "bottleneck_bits": 53987.2,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            8,
+            9,
+            12,
+            11,
+            10
+          ],
+          "hops": 24,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        }
+      ],
+      "chosen_action": 1,
+      "chosen_logical_path": [
+        8,
+        13,
+        10
+      ],
+      "outcome": "served",
+      "served_total": 38,
+      "blocked_total": 9
+    },
+    {
+      "step_idx": 47,
+      "demand": {
+        "src": 4,
+        "dst": 9,
+        "required_bits": 4275.6
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            4,
+            5,
+            9
+          ],
+          "hops": 29,
+          "bottleneck_bits": 16306.9,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "hops": 34,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            4,
+            6,
+            7,
+            8,
+            11,
+            12,
+            9
+          ],
+          "hops": 42,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            4,
+            6,
+            7,
+            8,
+            13,
+            12,
+            9
+          ],
+          "hops": 42,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        }
+      ],
+      "chosen_action": 0,
+      "chosen_logical_path": [
+        4,
+        5,
+        9
+      ],
+      "outcome": "served",
+      "served_total": 39,
+      "blocked_total": 9
+    },
+    {
+      "step_idx": 48,
+      "demand": {
+        "src": 9,
+        "dst": 13,
+        "required_bits": 13084.7
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            9,
+            12,
+            13
+          ],
+          "hops": 8,
+          "bottleneck_bits": 60092.7,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            9,
+            8,
+            13
+          ],
+          "hops": 12,
+          "bottleneck_bits": 56816.4,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            9,
+            11,
+            12,
+            13
+          ],
+          "hops": 18,
+          "bottleneck_bits": 60092.7,
+          "feasible": true
+        },
+        {
+          "logical_path": [
+            9,
+            12,
+            11,
+            8,
+            13
+          ],
+          "hops": 20,
+          "bottleneck_bits": 59471.6,
+          "feasible": true
+        }
+      ],
+      "chosen_action": 0,
+      "chosen_logical_path": [
+        9,
+        12,
+        13
+      ],
+      "outcome": "served",
+      "served_total": 40,
+      "blocked_total": 9
+    },
+    {
+      "step_idx": 49,
+      "demand": {
+        "src": 6,
+        "dst": 4,
+        "required_bits": 12925.6
+      },
+      "candidates": [
+        {
+          "logical_path": [
+            6,
+            4
+          ],
+          "hops": 10,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            6,
+            7,
+            8,
+            9,
+            5,
+            4
+          ],
+          "hops": 53,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            6,
+            7,
+            8,
+            11,
+            12,
+            9,
+            5,
+            4
+          ],
+          "hops": 61,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        },
+        {
+          "logical_path": [
+            6,
+            7,
+            8,
+            13,
+            12,
+            9,
+            5,
+            4
+          ],
+          "hops": 61,
+          "bottleneck_bits": 0.0,
+          "feasible": false
+        }
+      ],
+      "chosen_action": 4,
+      "chosen_logical_path": null,
+      "outcome": "blocked",
+      "served_total": 40,
+      "blocked_total": 10
+    }
+  ],
+  "final": {
+    "served": 40,
+    "blocked": 10,
+    "blocking_prob": 0.2
+  }
+}

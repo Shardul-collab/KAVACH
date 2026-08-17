@@ -1,0 +1,17 @@
+{
+  "_comment_1": "Copy the 'mcpServers' block below (just that block, merged into your existing config — don't overwrite anything else already there) into your actual Claude Desktop config.",
+  "_comment_2": "Easiest way to find/open the right file: in Claude Desktop, go to Settings -> Developer -> Edit Config. That opens the exact file for your OS/install, so you don't have to guess the path by hand.",
+  "_comment_3": "If editing by hand instead: on Windows it's typically %APPDATA%\\Claude\\claude_desktop_config.json. Claude Desktop runs on the Windows side even though your project lives in WSL, so 'command' below launches wsl.exe to bridge into your Linux environment where python3/kavach actually live.",
+  "_comment_4": "Restart Claude Desktop completely (not just close the window) after editing, or the new server won't load.",
+
+  "mcpServers": {
+    "kavach-workhandler": {
+      "command": "wsl.exe",
+      "args": [
+        "bash",
+        "-c",
+        "cd /mnt/c/Users/deman/Desktop/Kavach && python3 mcp_server.py"
+      ]
+    }
+  }
+}

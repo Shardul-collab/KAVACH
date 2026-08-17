@@ -1,0 +1,32 @@
+nohup: ignoring input
+CUDA available: True (NVIDIA GeForce RTX 2050)  |  training device: cpu
+Classical-traffic (coexistence) fraction: 30%
+  Not using GPU by default - this policy is a tiny MLP (few thousand params); CPU<->GPU transfer overhead makes GPU SLOWER here, not faster. Pass --device cuda to force it anyway.
+  When this actually matters as the project scales: bigger policy_kwargs net_arch, a CNN/graph encoder over topology structure, or (the bigger lever, matters before GPU does) vectorizing many parallel envs with SubprocVecEnv instead of one env per run - that's what actually saturates a GPU for RL at this problem scale, not a single tiny MLP forward pass.
+
+=== Kavach Phase 1: PPO vs DQN on nsfnet ===
+
+Random policy baseline (20 episodes)...
+  blocking_prob=64.70%  avg_served=17.6
+
+Widest-path heuristic baseline (20 episodes, SAME sequential demands + attacks as RL)...
+  blocking_prob=25.00%  avg_served=37.5  avg_reward=8.46
+
+Training PPO for 50000 timesteps (device=cpu)...
+  PPO: blocking_prob=27.10%  avg_served=36.5  avg_reward=6.63
+
+Training DQN for 50000 timesteps (device=cpu)...
+  DQN: blocking_prob=26.20%  avg_served=36.9  avg_reward=7.48
+
+=== Summary ===
+Policy                     Blocking prob    Avg served/episode
+Random                           64.70%                  17.6
+Widest-path heuristic            25.00%                  37.5
+PPO                              27.10%                  36.5
+DQN                              26.20%                  36.9
+
+This IS now an apples-to-apples comparison — heuristic ran through the
+identical sequential demand stream + jamming/intercept-resend as PPO/DQN,
+not Phase 0's static attack-free batch. If PPO/DQN beat the heuristic here,
+that's the actual claim worth making; if they're close to or worse than it,
+that's equally important to know before writing this up anywhere.
