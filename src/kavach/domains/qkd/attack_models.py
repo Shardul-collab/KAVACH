@@ -157,7 +157,7 @@ def random_intercept_resend_schedule(
 
 
 if __name__ == "__main__":
-    from .topology import nsfnet_topology
+    from kavach.core.topology import nsfnet_topology
     from .baselines import annotate_graph_with_qkd, widest_path
 
     g = annotate_graph_with_qkd(nsfnet_topology())
