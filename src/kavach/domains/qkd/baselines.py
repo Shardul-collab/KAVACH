@@ -180,7 +180,7 @@ def k_shortest_candidates(g: nx.Graph, source: int, target: int, k: int) -> list
 
 
 if __name__ == "__main__":
-    from .topology import nsfnet_topology, describe
+    from kavach.core.topology import nsfnet_topology, describe
 
     g = nsfnet_topology()
     g = annotate_graph_with_qkd(g)
